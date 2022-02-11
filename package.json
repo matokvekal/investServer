@@ -1,0 +1,53 @@
+{
+  "name": "invest-API",
+  "version": "1.0.0",
+  "description": "Node.js Rest Apis with Express, Sequelize & MySQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run start:local",
+    "start:local": "onchange \"app/**/*\" -i -k -- node -r esm ./app/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart:dev": "pm2 stop server-dev 2> /dev/null || true",
+    "start:dev": "MODE=development pm2 start ./app/index.js --node-args=\"-r esm\" --name=server-dev",
+    "prestart:preprod": "pm2 stop server-preprod 2> /dev/null || true",
+    "start:preprod": "MODE=preprod pm2 start ./app/index.js --node-args=\"-r esm\" --name=server-preprod",
+    "prestart:prod": "pm2 stop server-prod 2> /dev/null || true",
+    "start:prod": "MODE=production pm2 start ./app/index.js --node-args=\"-r esm\" --name=server-prod"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "rest",
+    "api",
+    "sequelize",
+    "mysql"
+  ],
+  "author": "invest",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "formidable": "^2.0.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mime": "^3.0.0",
+    "mkdirp": "^1.0.4",
+    "moment": "^2.29.1",
+    "mongodb": "^4.1.1",
+    "morgan": "^1.10.0",
+    "mv": "^2.1.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.0",
+    "node-cron": "^3.0.0",
+    "npm": "^8.1.4",
+    "request": "^2.88.2",
+    "require-in-the-middle": "^5.1.0",
+    "sequelize": "^6.7.0"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "onchange": "^7.1.0"
+  }
+}

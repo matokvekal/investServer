@@ -1,0 +1,34 @@
+ {"MULTYCOMPANY": [
+        {
+            "COMPANY_NAME": " ",
+            "COMPANY_ID": 100,
+            "noChaperoneForType_2":true,
+            "noChaperoneForType_3":true,
+            "tripOverlaping":true,
+            "noDriver":true,
+            "noCar":true,
+            "noDriverMinutesBefore":60,
+            "noCarMinutsBefore":60
+        },
+        {
+            "DEFAULT_ZONE": "",
+            "COMPANY_ID": 300,
+            "noChaperoneForType_2":true,
+            "noChaperoneForType_3":true,
+            "tripOverlaping":true,
+            "noDriver":true,
+            "noCar":true,
+            "noDriverMinutesBefore":60,
+            "noCarMinutsBefore":60
+        },
+        {
+            "COMPANY_NAME": "",
+            "COMPANY_ID": 300,
+            "noChaperoneForType_2":true,
+            "noChaperoneForType_3":true,
+            "tripOverlaping":true,
+            "noDriver":true,
+            "noCar":true,
+            "noDriverMinutesBefore":60,
+            "noCarMinutsBefore":60
+        }]}
